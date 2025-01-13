@@ -1,0 +1,18 @@
+.root{
+	-fx-background-color:#111111;
+}
+
+
+#textLable{
+	
+}
+#titleLable{
+	-fx-font-size:62.0;
+}
+
+.label{
+	-fx-font-size:22.0;
+	-fx-font-family: "Lucida Consoles";
+	-fx-text-fill:"white";
+	-fx-alignment:center ;
+}

@@ -1,0 +1,8 @@
+.class
+Servers/
+*.zip
+
+Apache/
+
+.metadata/
+.metadata

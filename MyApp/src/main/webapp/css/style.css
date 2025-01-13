@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+body {
+	color: white;
+	background-color: #212121;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-container ul {
+	list-style: none;
+	display: flex;
+	color: white;
+}
+
+.menu-container ul li a {
+	display: block;
+	margin: 5px 10px;
+	color: white;
+=======
+body {
+	color: white;
+	background-color: #212121;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-container ul {
+	list-style: none;
+	display: flex;
+	color: white;
+}
+
+.menu-container ul li a {
+	display: block;
+	margin: 5px 10px;
+	color: white;
+>>>>>>> 820a8503d9b28a89c5c7c2077ec37760b56a3e84
+}

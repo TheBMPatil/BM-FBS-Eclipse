@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+.root{
+	-fx-background-color:#111111;
+}
+
+
+#textLable{
+	
+}
+#titleLable{
+	-fx-font-size:62.0;
+}
+
+.label{
+	-fx-font-size:22.0;
+	-fx-font-family: "Lucida Consoles";
+	-fx-text-fill:"white";
+	-fx-alignment:center ;
+=======
+.root{
+	-fx-background-color:#111111;
+}
+
+
+#textLable{
+	
+}
+#titleLable{
+	-fx-font-size:62.0;
+}
+
+.label{
+	-fx-font-size:22.0;
+	-fx-font-family: "Lucida Consoles";
+	-fx-text-fill:"white";
+	-fx-alignment:center ;
+>>>>>>> 820a8503d9b28a89c5c7c2077ec37760b56a3e84
+}

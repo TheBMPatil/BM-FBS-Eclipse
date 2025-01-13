@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAVA Resources/External Libs/mysql-connector-j-9.1.0/mysql-connector-j-9.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/bmpatil/Downloads/mysql-connector-j-9.0.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

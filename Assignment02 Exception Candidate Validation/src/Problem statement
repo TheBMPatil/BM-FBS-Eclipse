@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+Application : Console App : Exception Handling Task
+Senior Software Engineer Recruitment:
+Input: candidate Expertise [Java full stack/Microservices/Software Development] check Expertise
+candidate educational background :
+- check Educational [BTech/BE/BCA/MCA]
+- passing year [ less than 2023 and greater than 2013]
+- check candidate known languages [ English ]
+- check candidate age [>18]
+- check candidate experience [>5]
+Each checks should contains exception handling , but not inbuilt so you need to create your exception classes and your custom exception messages.
+=======
+Application : Console App : Exception Handling Task
+Senior Software Engineer Recruitment:
+Input: candidate Expertise [Java full stack/Microservices/Software Development] check Expertise
+candidate educational background :
+- check Educational [BTech/BE/BCA/MCA]
+- passing year [ less than 2023 and greater than 2013]
+- check candidate known languages [ English ]
+- check candidate age [>18]
+- check candidate experience [>5]
+Each checks should contains exception handling , but not inbuilt so you need to create your exception classes and your custom exception messages.
+>>>>>>> 820a8503d9b28a89c5c7c2077ec37760b56a3e84
+based on above conditions show candidate is Selected or not .
