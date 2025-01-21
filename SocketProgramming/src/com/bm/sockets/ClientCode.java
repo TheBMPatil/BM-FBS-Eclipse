@@ -16,6 +16,8 @@ public class ClientCode {
 			DataOutputStream dos = new DataOutputStream(sender.getOutputStream());
 			dos.writeUTF(message);
 
+			System.out.println("Client close");
+
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
