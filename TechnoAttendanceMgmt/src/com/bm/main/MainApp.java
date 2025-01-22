@@ -26,7 +26,7 @@ public class MainApp {
 				switch (choice) {
 				case 0 -> {
 					System.out.println("Exiting");
-					break;
+					break;  
 				}
 				case 1 -> {
 					sql = "SELECT * from useraccount;";
