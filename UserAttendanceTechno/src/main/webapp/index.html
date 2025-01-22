@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Database Operations</title>
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+	<header>
+		<h1>User Attendance Database Operations</h1>
+	</header>
+	<div class="container">
+		<a href="#view-users" class="button">View All Users</a> <a
+			href="#view-attendance" class="button">View Attendance History</a>
+		<form id="insert-user">
+			<h3>Insert User</h3>
+			<input type="text" placeholder="First Name" name="firstName" required>
+			<input type="text" placeholder="Last Name" name="lastName" required>
+			<input type="text" placeholder="Login ID" name="loginId" required>
+			<input type="password" placeholder="Password" name="password"
+				required> <input type="email" placeholder="Email ID"
+				name="emailId" required> <select name="activeFlag">
+				<option value="Y">Active</option>
+				<option value="N">Inactive</option>
+			</select>
+			<button type="submit" class="submit-button">Insert User</button>
+		</form>
+		<form id="update-user">
+			<h3>Update User</h3>
+			<input type="number" placeholder="User ID" name="userId" required>
+
+			<input type="email" placeholder="Email ID" name="emailId">
+
+			<button type="submit" class="submit-button">Update User</button>
+		</form>
+		<form id="delete-user">
+			<h3>Delete User</h3>
+			<input type="number" placeholder="User ID" name="userId" required>
+			<button type="submit" class="submit-button">Delete User</button>
+		</form>
+	</div>
+</body>
+</html>
