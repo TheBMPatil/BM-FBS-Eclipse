@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+//This is Service layer Component 
 @WebServlet("/cardverify") // Matching front-end action to the Servlet
 //This is called the URL pattern of the class
 //The url pattern must start with '/' while defining and no '/' when using it
@@ -24,14 +25,25 @@ public class CardCheck extends HttpServlet {
 		String cardNo = req.getParameter("cardno");
 		String cvv = req.getParameter("cvv");
 		String expdate = req.getParameter("expdate");
+		Card cardObj = new Card(name, cardNo, cvv, expdate);
 
-		System.out.println("Data recived from client : " + "\nCard holder name : " + name + "\nCard Number : " + cardNo
-				+ "\nCVV : " + cvv + "\nExpiry date : " + expdate);
+		CardVerificatrion ref = new CardVerificatrion();
+		boolean isOk = ref.verify(cardObj);
+
+//		System.out.println("Data recived from client : " + "\nCard holder name : " + name + "\nCard Number : " + cardNo
+//				+ "\nCVV : " + cvv + "\nExpiry date : " + expdate);
 
 		PrintWriter out = res.getWriter();
-		out.println("Data Recived" + "\nCard holder name : " + name + "\nCard Number : " + cardNo + "\nCVV : " + cvv
-				+ "\nExpiry date : " + expdate);
+		out.println("Data Recived");
 
+//				+ "\nCard holder name : " + name + "\nCard Number : " + cardNo + "\nCVV : " + cvv
+//				+ "\nExpiry date : " + expdate);
+
+		if (isOk) {
+			out.println("<h1> Card Verified <h1>");
+		} else {
+			out.println("Card not verified");
+		}
 	}
 
 }
