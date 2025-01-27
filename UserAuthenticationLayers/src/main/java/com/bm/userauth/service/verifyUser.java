@@ -26,13 +26,14 @@ public class verifyUser extends HttpServlet {
 
 		AuthUser ref = new AuthUser();
 		boolean isOk = ref.verify(user);
-
-		PrintWriter out = res.getWriter();
-		out.println("Data Recived");
+//		PrintWriter out = res.getWriter();
+//		out.println("Data Recived");
 		if (isOk) {
-			out.println("User Verified ");
+			res.sendRedirect("home.html");
+//			out.println("User Verified ");
 		} else {
-			out.println("User not verified");
+			res.sendRedirect("Error.html");
+//			out.println("User not verified");
 		}
 	}
 }

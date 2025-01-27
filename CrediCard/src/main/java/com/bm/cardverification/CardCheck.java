@@ -3,6 +3,8 @@ package com.bm.cardverification;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,7 +22,7 @@ public class CardCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 //	@Override
-	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		String name = req.getParameter("name");
 		String cardNo = req.getParameter("cardno");
 		String cvv = req.getParameter("cvv");
@@ -33,16 +35,19 @@ public class CardCheck extends HttpServlet {
 //		System.out.println("Data recived from client : " + "\nCard holder name : " + name + "\nCard Number : " + cardNo
 //				+ "\nCVV : " + cvv + "\nExpiry date : " + expdate);
 
-		PrintWriter out = res.getWriter();
-		out.println("Data Recived");
+//		PrintWriter out = res.getWriter();
+//		out.println("Data Recived");
 
 //				+ "\nCard holder name : " + name + "\nCard Number : " + cardNo + "\nCVV : " + cvv
 //				+ "\nExpiry date : " + expdate);
 
 		if (isOk) {
-			out.println("<h1> Card Verified <h1>");
+			RequestDispatcher rd = req.getRequestDispatcher("history");
+			rd.forward(req, res);
+//			out.println("<h1> Card Verified <h1>");
 		} else {
-			out.println("Card not verified");
+			res.sendRedirect("error.html");
+//			out.println("Card not verified");
 		}
 	}
 
