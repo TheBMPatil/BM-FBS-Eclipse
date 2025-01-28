@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcomWeb</title>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div class="main-container">
+		<!-- Navbar -->
+		<nav class="navbar">
+			<div class="text">Welcome to EcomStore</div>
+			<div class="cart-btn">
+				<button>View Cart</button>
+			</div>
+		</nav>
+
+		<!-- Products -->
+		<section class="products">
+			<!-- Example Product -->
+			<div class="product">
+				<form action="addToCart" method="post">
+					<img src="imgs/AboutHero.jpg" alt="Product Image">
+					<p class="product-name">Laptop</p>
+					<input type="hidden" name="prodName" value='Laptop'>
+					<p class="product-price" name="prodPrice" value='20.00'>Price:
+						$20.00</p>
+					<input type="hidden" name="prodPrice" value='20.00'> <input
+						type="hidden" name="prodId" value='5'> <br>
+					<p class="product-id">Enter Product Quantity:</p>
+					<input type="number" name="qty" value="1" min="1">
+					<button type="submit" name="callToAction" value="addToCart">
+						Add to Cart</button>
+
+
+					<button type="submit" name="callToAction" value="checkOut">Checkout</button>
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
