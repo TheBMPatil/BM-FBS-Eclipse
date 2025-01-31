@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD : Document Type Defination : OLD Simpler , Simple Objects XSD : 
+	XML Schema Definataion : newer complex , Complex custom Objects -->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver-class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">0787</property>
+		<property name="show_sql">true</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping class="com.bm.entity.User"></mapping>
+
+
+	</session-factory>
+</hibernate-configuration>
+
+
+
+<!-- we get intellisense due to adding this -->
+	
+	
+
